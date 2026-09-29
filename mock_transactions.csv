@@ -1,0 +1,5 @@
+transaction_id,customer_id,amount,merchant,date,status,signature_present
+TXN1001,CUST99,250.0,Amazon,2026-07-15,Settled,True
+TXN1002,CUST99,250.0,Amazon,2026-07-15,Settled,True
+TXN2005,CUST44,1200.5,BestBuy,2026-07-18,Settled,False
+TXN3009,CUST12,45.0,Uber,2026-07-20,Pending,True

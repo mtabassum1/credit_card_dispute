@@ -1,0 +1,4 @@
+case_id,customer_id,complaint_text
+CASE-001,CUST99,I was charged twice for the same $250 transaction on Amazon on July 15th.
+CASE-002,CUST44,There is a massive charge from BestBuy for $1200.50 that I never authorized.
+CASE-003,CUST12,The merchant Uber promised a refund for my $45 ride but I haven't received it.

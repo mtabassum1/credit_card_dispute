@@ -1,0 +1,23 @@
+[
+    {
+        "case_id": "CASE-001",
+        "dispute_category": "DUPLICATE_CHARGE",
+        "compliance_status": "APPROVED",
+        "confidence_score": 0.98,
+        "explanation": "Two identical charges of $250 detected on the same day from Amazon with matching signatures. Meets explicit duplicate signature refund criteria."
+    },
+    {
+        "case_id": "CASE-002",
+        "dispute_category": "FRAUD",
+        "compliance_status": "MANUAL_REVIEW_REQUIRED",
+        "confidence_score": 0.85,
+        "explanation": "High value ($1200.50) transaction flagged as unauthorized by customer. Signature is missing on file. Escalating for mandatory human-in-the-loop review."
+    },
+    {
+        "case_id": "CASE-003",
+        "dispute_category": "MERCHANT_ISSUE",
+        "compliance_status": "REJECTED",
+        "confidence_score": 0.92,
+        "explanation": "Customer claims merchant promised a refund, but no written validation or cancellation receipts were attached. Fails policy threshold for automated credit."
+    }
+]

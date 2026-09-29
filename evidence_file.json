@@ -1,0 +1,62 @@
+[
+    {
+        "case_id": "CASE-001",
+        "customer_id": "CUST99",
+        "dispute_category": "DUPLICATE_CHARGE",
+        "complaint_text": "I was charged twice for the same $250 transaction on Amazon on July 15th.",
+        "associated_transactions": [
+            {
+                "transaction_id": "TXN1001",
+                "customer_id": "CUST99",
+                "amount": 250.0,
+                "merchant": "Amazon",
+                "date": "2026-07-15",
+                "status": "Settled",
+                "signature_present": true
+            },
+            {
+                "transaction_id": "TXN1002",
+                "customer_id": "CUST99",
+                "amount": 250.0,
+                "merchant": "Amazon",
+                "date": "2026-07-15",
+                "status": "Settled",
+                "signature_present": true
+            }
+        ]
+    },
+    {
+        "case_id": "CASE-002",
+        "customer_id": "CUST44",
+        "dispute_category": "FRAUD",
+        "complaint_text": "There is a massive charge from BestBuy for $1200.50 that I never authorized.",
+        "associated_transactions": [
+            {
+                "transaction_id": "TXN2005",
+                "customer_id": "CUST44",
+                "amount": 1200.5,
+                "merchant": "BestBuy",
+                "date": "2026-07-18",
+                "status": "Settled",
+                "signature_present": false
+            }
+        ]
+    },
+    {
+        "case_id": "CASE-003",
+        "customer_id": "CUST12",
+        "dispute_category": "MERCHANT_ISSUE",
+        "complaint_text": "The merchant Uber promised a refund for my $45 ride but I haven't received it.",
+        "associated_transactions": [
+            {
+                "transaction_id": "TXN3009",
+                "customer_id": "CUST12",
+                "amount": 45.0,
+                "merchant": "Uber",
+                "date": "2026-07-20",
+                "status": "Pending",
+                "signature_present": true
+            }
+        ]
+    }
+]
