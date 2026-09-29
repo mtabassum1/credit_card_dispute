@@ -1,23 +1,23 @@
 [
     {
         "case_id": "CASE-001",
-        "dispute_category": "DUPLICATE_CHARGE",
+        "dispute_category": "AUTOMATED_EVALUATION",
         "compliance_status": "APPROVED",
         "confidence_score": 0.98,
-        "explanation": "Two identical charges of $250 detected on the same day from Amazon with matching signatures. Meets explicit duplicate signature refund criteria."
+        "explanation": "[POLICY-101] TXN1001 and TXN1002 share the same customer, merchant (Amazon), exact amount ($250.00), and date (2026-07-15), so they fall within the 24-hour window. Both have signature_present = true, so a signature duplicate is verified and the ledger matches the complaint. POLICY-101 requires auto-approval."
     },
     {
         "case_id": "CASE-002",
-        "dispute_category": "FRAUD",
+        "dispute_category": "AUTOMATED_EVALUATION",
         "compliance_status": "MANUAL_REVIEW_REQUIRED",
         "confidence_score": 0.85,
-        "explanation": "High value ($1200.50) transaction flagged as unauthorized by customer. Signature is missing on file. Escalating for mandatory human-in-the-loop review."
+        "explanation": "[POLICY-202] The disputed charge of $1,200.50 exceeds the $1,000.00 threshold and signature_present is false. POLICY-202 requires flagging the case for immediate human-in-the-loop manual review. It should be neither auto-approved nor auto-denied."
     },
     {
         "case_id": "CASE-003",
-        "dispute_category": "MERCHANT_ISSUE",
+        "dispute_category": "AUTOMATED_EVALUATION",
         "compliance_status": "REJECTED",
         "confidence_score": 0.92,
-        "explanation": "Customer claims merchant promised a refund, but no written validation or cancellation receipts were attached. Fails policy threshold for automated credit."
+        "explanation": "[POLICY-303] POLICY-303 requires a copy of the explicit cancellation receipt or written refund confirmation from the vendor. Neither is in the case file, and only the customer's verbal claim is present. The transaction is still Pending. The claim cannot be approved on the current record."
     }
 ]
